@@ -1,0 +1,773 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <!--header-->
+        
+        <div id="header">
+            <div onclick="home()" id="logo"></div>
+            <h4 style="color: white" id="webName">gameHeaven</h4>
+            <a style="color: white" id="game"><i class="ri-gamepad-line"></i></a>
+            <a style="color: white" id="cart"><i class="ri-shopping-cart-line"></i></a>
+        </div>
+        
+        <!--Body1-->
+        <div id="body1">
+            <div style="background: transparent;" id="search"><input type="text" placeholder="search"></div>
+            <div id="bodyLogo"></div>
+            <br>
+            <div id="links">
+                <a onclick="topS()" href="#">Top Sales</a>
+                <a onclick="affI()" style="width: 150px;" href="#">Affordable Items</a>
+                <a onclick="promD()" href="#">Promo Deals</a>
+                <a onclick="menI()" href="#">Main Items</a>
+            </div>
+        </div>
+        <!--Body2-->
+        <div id="body2">
+            <h1 style="color: white">Top Sales</h1>
+            <hr>
+            <div id="items">
+             
+                <div id="it1">
+                    <div  style="display: none;" id="box1">
+                        <h3>Gaming Chair</h3>
+                        <br>
+                        <hr>
+                        <h4>price: $280</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <button id="buy">Buy Now</button>
+                    </div>
+                    <img onmouseover="box1()" onmouseleave="boxOut1()" src="images/chair.webp">
+                    <div id="rate">
+                        <div style="display: block;" id="shadeStar">
+                           
+                            <a style="display: none;" id="s1" ><i onclick="s1()" class="ri-star-fill"></i></a>
+                            <a style="display: none;" id="s2" ><i onclick="s2()" class="ri-star-fill"></i></a>
+                            <a style="display: none;" id="s3" ><i onclick="s3()" class="ri-star-fill"></i></a>
+                            <a style="display: none;" id="s4" onclick="s4()"><i class="ri-star-fill"></i></a>
+                            <a style="display: none;" id="s5" onclick="s5()"><i class="ri-star-fill"></i></a>
+                      
+
+                        </div>
+                        <a onclick="s1()"><i class="ri-star-line"></i></a>
+                        <a onclick="s2()"><i class="ri-star-line"></i></a>
+                        <a onclick="s3()"><i class="ri-star-line"></i></a>
+                        <a onclick="s4()"><i class="ri-star-line"></i></a>
+                        <a onclick="s5()"><i class="ri-star-line"></i></a>
+                    </div>
+                </div>
+                <div id="it1">
+                    <div  style="display: none;" id="box2">
+                        <h3>CPU</h3>
+                        <br>
+                        <hr>
+                        <h4>price: $689</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <button id="buy">Buy Now</button>
+                    </div>
+                    <img onmouseover="box2()" onmouseleave="boxOut2()" src="images/cpu.jfif">
+                    <div id="rate">
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                    </div>
+                
+                </div>
+                <div id="it1">
+                    <div  style="display: none;" id="box3">
+                        <h3>KEYBOARD</h3>
+                        <br>
+                        <hr>
+                        <h4>price: $105</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <button id="buy">Buy Now</button>
+                    </div>
+                    <img onmouseover="box3()" onmouseleave="boxOut3()" src="images/keyboard.jfif">
+                    <div id="rate">
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                    </div>
+                </div>
+            </div>
+                <br>
+
+            <div id="items1">
+                <div id="it1">
+                    <div  style="display: none;" id="box4">
+                        <h3>MONITOR</h3>
+                        <br>
+                        <hr>
+                        <h4>price: $403</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <button id="buy">Buy Now</button>
+                    </div>
+                    <img onmouseover="box4()" onmouseleave="boxOut4()" src="images/monitor.png">
+                    <div id="rate1">
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                    </div>
+                </div>
+                <div id="it1">`
+                    <div  style="display: none;" id="box5">
+                        <h3>SPEAKER</h3>
+                        <br>
+                        <hr>
+                        <h4>price: $201</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <button id="buy">Buy Now</button>
+                    </div>
+                    <img onmouseover="box5()" onmouseleave="boxOut5()" src="images/speaker.jfif">
+                    <div id="rate1">
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                    </div>
+                </div>
+                <div id="it1">
+                    <div  style="display: none;" id="box6">
+                        <h3>DESK FOR PC</h3>
+                        <br>
+                        <hr>
+                        <h4>price: $350</h4>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <button id="buy">Buy Now</button>
+                    </div>
+                    <img onmouseover="box6()" onmouseleave="boxOut6()" src="images/desk.jfif">
+                    <div id="rate1">
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                        <a><i class="ri-star-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div style="color: white" onclick="back()" id="back"><i class="ri-arrow-left-line"></i></div>
+        </div>
+
+
+        <!--body3-->
+        <div style="display: none;" id="body3">
+            <a onclick="back()"  id="back"><i class="ri-arrow-left-line"></i></a>
+            <h1>AFFORDABLE ITEMS</h1>
+            <hr>
+            <div id="abox1">
+                <div id="details1">
+                    <h3>GAMING SOCKS</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $12</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show1()" onmouseout="out1()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="ai/1.webp">
+                <div id="airate">
+                    <a id="star1" onclick="shade1()"><i class="ri-star-line"></i></a>
+                    <a id="star2" onclick="shade2()"><i class="ri-star-line"></i></a>
+                    <a id="star3" onclick="shade3()"><i class="ri-star-line"></i></a>
+                    <a id="star4" onclick="shade4()"><i class="ri-star-line"></i></a>
+                    <a id="star5" onclick="shade5()"><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox2">
+                <div id="details2">
+                    <h3>GAMING GLOVES</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $50</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show2()" onmouseout="out2()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="ai/2.webp">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox3">
+                <div id="details3">
+                    <h3>GAMING GLASS</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $104</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show3()" onmouseout="out3()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="ai/3.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox4">
+                <div id="details4">
+                    <h3>GAMING PANTS</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $200</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show4()" onmouseout="out4()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="ai/4.webp">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox5">
+                <div id="details5">
+                    <h3>GAMING SHIRT</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $120</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show5()" onmouseout="out5()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="ai/5.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox6">
+                <div id="details6">
+                    <h3>GAMING CAP</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $90</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show6()" onmouseout="out6()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="ai/6.webp">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--body4-->
+
+        <div style="display: none;" id="body4">
+            <a onclick="back()"  id="back"><i class="ri-arrow-left-line"></i></a>
+            <h1>PROMO DEALS</h1>
+            <hr>
+            <div id="abox1">
+                <div id="details1">
+                    <h3>GAMING MUG</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $20</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show1()" onmouseout="out1()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="pd/1.webp">
+                <div id="airate">
+                    <a id="star1" onclick="shade1()"><i class="ri-star-line"></i></a>
+                    <a id="star2" onclick="shade2()"><i class="ri-star-line"></i></a>
+                    <a id="star3" onclick="shade3()"><i class="ri-star-line"></i></a>
+                    <a id="star4" onclick="shade4()"><i class="ri-star-line"></i></a>
+                    <a id="star5" onclick="shade5()"><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox2">
+                <div id="details2">
+                    <h3>GAMING FAN</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $290</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show2()" onmouseout="out2()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="pd/2.png">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox3">
+                <div id="details3">
+                    <h3>GAMING SLIPPERS</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $80</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show3()" onmouseout="out3()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="pd/3.webp">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox4">
+                <div id="details4">
+                    <h3>GAMING JACKET</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $489</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show4()" onmouseout="out4()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="pd/4.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox5">
+                <div id="details5">
+                    <h3>GAMING HEADSET</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $49</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show5()" onmouseout="out5()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="pd/5.webp">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox6">
+                <div id="details6">
+                    <h3>GAMING BALLPEN</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $10</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show6()" onmouseout="out6()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="pd/6.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--BODY5-->
+        <div style="display: none;" id="body5">
+            <a onclick="back()"  id="back"><i class="ri-arrow-left-line"></i></a>
+            <h1>MENU ITEMS</h1>
+            <hr>
+            <div id="abox1">
+                <div id="details1">
+                    <h3>CPU</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $689</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show1()" onmouseout="out1()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="mi/1.jpg">
+                <div id="airate">
+                    <a id="star1" onclick="shade1()"><i class="ri-star-line"></i></a>
+                    <a id="star2" onclick="shade2()"><i class="ri-star-line"></i></a>
+                    <a id="star3" onclick="shade3()"><i class="ri-star-line"></i></a>
+                    <a id="star4" onclick="shade4()"><i class="ri-star-line"></i></a>
+                    <a id="star5" onclick="shade5()"><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox2">
+                <div id="details2">
+                    <h3>CPU</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $689</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show2()" onmouseout="out2()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="mi/2.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox3">
+                <div id="details3">
+                    <h3>CPU</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $689</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show3()" onmouseout="out3()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="mi/3.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox4">
+                <div id="details4">
+                    <h3>CPU</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $689</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show4()" onmouseout="out4()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="mi/4.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox5">
+                <div id="details5">
+                    <h3>CPU</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $689</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show5()" onmouseout="out5()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="mi/5.jpg">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+
+            <div id="abox6">
+                <div id="details6">
+                    <h3>CPU</h3>
+                    <br>
+                    <hr>
+                    <h4>price: $689</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <hr>
+                    <button id="buy">Buy Now</button>
+                </div>
+                <img onmouseover="show6()" onmouseout="out6()" id="m" style="width: 250px; height: 300px; cursor: pointer;" src="mi/6.webp">
+                <div id="airate">
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                    <a><i class="ri-star-line"></i></a>
+                </div>
+                <div id="airate-fill">
+                    <i style="display: none;" id="starF1" onclick="shaded1()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF2" onclick="shaded2()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF3" onclick="shaded3()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF4" onclick="shaded4()" class="ri-star-fill"></i>
+                    <i style="display: none;" id="starF5" onclick="shaded5()" class="ri-star-fill"></i>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--Footer-->
+        <div id="footer">
+            <div id="info1">
+                <h2 style="color: white">follow us on</h2>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+            <div id="info2">
+                <h2 style="color: white">About Us</h2>
+                <ul>
+                    <li style="color: white">Contact number: 09475961858</li>
+                    <li style="color: white">Market Place: Phase 2 Blk 3 Lot 3 Lakeside</li>
+                    <li><a href="#">gameHeaven.io</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </body>
+</html>
